@@ -51,9 +51,7 @@ However, it doesn't consider shift/reduce conflicts. A modified CFG based on pri
 
 (6) eqExpr → cmpExpr | eqExpr′ = ′ ′ = ′ cmpExpr | eqExpr ′ ! ′ ′ = ′ cmpExpr
 
-(7) cmpExpr → addExpr | cmpExpr ′ < ′ addExpr | cmpExpr ′ < ′ ′ = ′ addExpr
-
-| cmpExpr ′ > ′ addExpr | cmpExpr ′ > ′ ′ = ′ addExpr
+(7) cmpExpr → addExpr | cmpExpr ′ < ′ addExpr | cmpExpr ′ < ′ ′ = ′ addExpr | cmpExpr ′ > ′ addExpr | cmpExpr ′ > ′ ′ = ′ addExpr
 
 (8) addExpr → mulExpr | addExpr ′ + ′ mulExpr | addExpr ′ − ′ mulExpr
 
