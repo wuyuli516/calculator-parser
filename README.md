@@ -22,7 +22,7 @@ implemented an expression parser which supports the following operations and var
 * Bison (version=1.28)
 
 ## CFG Design
-### simple CFG
+### a simple CFG
 A simple CFG can be written as follows:
 
 exp → DNUM | INUM | TRUE | FALSE | VAR | VAR ′ = ′ exp |
@@ -38,7 +38,7 @@ exp ′ − ′ exp | exp ′ ∗ ′ exp | exp ′/′ exp | exp ′%′ exp|
 ′ + ′exp| ′ − ′ exp | ′ ! ′ exp| ′(′ exp ′)′
 
 However, it doesn't consider shift/reduce conflicts. A modified CFG based on priority and associativity is demonstrated below. The code is built upon this CFG.
-### revised CFG
+### a revised CFG
 (1) line_list → line | line_list line
 
 (2) line → expression ′\n′ | error ′\n′
